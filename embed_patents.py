@@ -11,7 +11,7 @@ BATCH_SIZE = 100
 client = OpenAI()
 
 conn = psycopg2.connect(
-    dbname="postgres",
+    dbname="patents",
     user="natashasaini",
     host="localhost"
 )
