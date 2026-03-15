@@ -185,6 +185,44 @@ seed planting operations using subsurface sensing
 and non-contact sensors.
 </pre>
 
+
+<h3>API-based Search using FastAPI</h3>
+
+1. Start the FastAPI server:
+
+<pre>
+python app.py
+</pre>
+
+2. Open the browser at:
+
+<pre>
+http://127.0.0.1:8000/docs
+</pre>
+
+3. Test the endpoint `/search_patents`:
+
+- Input: `query` (text), `top_k` (number of results)  
+- Output: JSON with patent titles, abstracts, and similarity scores
+
+Example request via cURL:
+
+<pre>
+curl "http://127.0.0.1:8000/search_patents?query=air+pockets&top_k=5"
+</pre>
+
+Example JSON response:
+
+<pre>
+{
+  "query": "air pockets",
+  "results": [
+    { "title": "...", "abstract": "...", "similarity_score": 0.91 },
+    ...
+  ]
+}
+</pre>
+
 <hr>
 
 <h2>🧠 Technologies Used</h2>
@@ -195,7 +233,6 @@ and non-contact sensors.
 <li>pgvector</li>
 <li>OpenAI embeddings</li>
 <li>Docker</li>
+<li>FastAPI</li>
+<li>Uvicorn</li>
 </ul>
-
-<hr>
-
