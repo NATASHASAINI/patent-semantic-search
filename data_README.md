@@ -21,19 +21,18 @@ This project allows users to:
 
 ## 🏗️ Architecture Overview
 
-User Query
-    ↓
-OpenAI Embedding API
-    ↓
-Query Vector (1536-dim)
-    ↓
-PostgreSQL + pgvector
-    ↓
-Vector Similarity Search (<->)
-    ↓
-Top-K Patent Results
-
----
+User query
+   ↓
+FastAPI /search endpoint
+   ↓
+Sentence Transformer
+(all-MiniLM-L6-v2)
+   ↓
+Embedding vector
+   ↓
+PGVector similarity search
+   ↓
+Top similar patents returned
 
 ## 📂 Project Structure
 patent-semantic-search/
