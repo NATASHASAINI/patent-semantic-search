@@ -1,8 +1,8 @@
 venv/
-venv311/
 __pycache__/
 *.pyc
 .env
-patents_clean.csv
-data/
-
+.DS_Store
+node_modules/
+dist/
+build/

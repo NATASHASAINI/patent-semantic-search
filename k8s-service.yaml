@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: patent-semantic-search-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: patent-search
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
