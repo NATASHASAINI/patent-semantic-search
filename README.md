@@ -21,7 +21,8 @@ This project implements a <b>semantic patent search engine</b> that retrieves pa
 </p>
 
 <p>
-The system converts patent text and user queries into numerical vectors (embeddings) and performs similarity search using <b>PostgreSQL with pgvector</b>.
+The system converts patent text and user queries into numerical vectors (embeddings) and performs similarity search using <b>PostgreSQL with pgvector.
+Built and containerized a FastAPI-based patent semantic search platform using Docker, with Kubernetes-ready deployment architecture for scalable AI-powered patent retrieval and drafting workflows.
 </p>
 
 <hr>
